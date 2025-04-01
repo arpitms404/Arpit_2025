@@ -16,7 +16,7 @@ const Certifications = () => {
     {
       id: 'gate2022',
       title: 'GATE 2022',
-      organization: 'IIT Kharagpur',
+      organization: '',
       date: 'February 2022',
       description: 'Scored AIR 3209 with a score of 590 in the Graduate Aptitude Test in Engineering.',
       image: '/gate-logo.png',
