@@ -157,7 +157,7 @@ const Index = () => {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-6">Interested in working together?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-              I'm currently available for freelance work and full-time positions.
+              I'm currently available for full-time positions.
               If you're looking for a DevOps Engineer to help with your infrastructure, let's talk!
             </p>
             <Button asChild size="lg" variant="secondary">

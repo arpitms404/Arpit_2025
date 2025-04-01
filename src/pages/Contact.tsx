@@ -152,7 +152,7 @@ const Contact = () => {
                 <div className="mt-10 p-6 bg-muted/50 rounded-lg border border-border">
                   <h3 className="text-lg font-medium mb-3">Availability</h3>
                   <p className="mb-4">
-                    I'm currently available for freelance work and full-time positions. 
+                    I'm currently available for full-time positions. 
                     My typical response time is within 24 hours.
                   </p>
                   <div className="flex items-center text-sm">
