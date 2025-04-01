@@ -33,8 +33,7 @@ const Index = () => {
                 </h1>
 
                 <p className="text-lg md:text-xl text-muted-foreground mt-4 max-w-lg">
-                  Experienced with Linux server management, AWS, and networking. 
-                  I specialize in building and maintaining reliable infrastructure.
+                Experienced in Linux server management, AWS, and networking. I specialize in building and maintaining stable and efficient systems..
                 </p>
 
                 <div className="flex flex-wrap gap-4 pt-4">
