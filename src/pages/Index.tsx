@@ -43,9 +43,10 @@ const Index = () => {
                     </Link>
                   </Button>
                   <Button variant="outline" asChild>
-                    <a href="/resume.pdf" download>
-                      Download CV <Download className="ml-2 h-4 w-4" />
-                    </a>
+                  <a href="/Arpit Shrivastva 01-04-2025.pdf" download="Arpit_Shrivastava_Resume.pdf">
+    Download CV <Download className="ml-2 h-4 w-4" />
+</a>
+
                   </Button>
                 </div>
 
