@@ -149,17 +149,6 @@ const Contact = () => {
                   </div>
                 </div>
                 
-                <div className="mt-10 p-6 bg-muted/50 rounded-lg border border-border">
-                  <h3 className="text-lg font-medium mb-3">Availability</h3>
-                  <p className="mb-4">
-                    I'm currently available for full-time positions. 
-                    My typical response time is within 24 hours.
-                  </p>
-                  <div className="flex items-center text-sm">
-                    <div className="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
-                    <span>Available for new opportunities</span>
-                  </div>
-                </div>
               </motion.div>
               
               <motion.div
@@ -248,27 +237,28 @@ const Contact = () => {
             
             <div className="space-y-6 text-left">
               <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
-                <h3 className="text-lg font-medium mb-2">What services do you offer?</h3>
+                <h3 className="text-lg font-medium mb-2">What do you specialize in?</h3>
                 <p className="text-muted-foreground">
-                  I specialize in Linux server management, AWS cloud services configuration, and 
-                  network management. I can help with server installation, configuration, troubleshooting,
-                  and maintaining optimal performance.
+                  I specialize in technology leadership, full-stack development (MERN, PHP/Laravel), 
+                  software architecture, and DevOps practices. I focus on building scalable, 
+                  high-impact digital solutions that drive business success.
                 </p>
               </div>
               
               <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
-                <h3 className="text-lg font-medium mb-2">Are you available for remote work?</h3>
+                <h3 className="text-lg font-medium mb-2">What kind of projects do you work on?</h3>
                 <p className="text-muted-foreground">
-                  Yes, I work primarily remotely and have experience collaborating with teams across 
-                  different time zones. I'm comfortable with various communication and project management tools.
+                  I lead technology strategy and development for scalable software platforms, 
+                  business automation tools, API infrastructure, and SaaS applications. 
+                  My focus is on creating solutions that combine innovation with real-world business results.
                 </p>
               </div>
               
               <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
                 <h3 className="text-lg font-medium mb-2">What is your typical response time?</h3>
                 <p className="text-muted-foreground">
-                  I usually respond to inquiries within 24 hours. For urgent matters, I'm often able to 
-                  respond much more quickly. Communication is a priority for me.
+                  I usually respond to inquiries within 24 hours. For meaningful collaboration 
+                  opportunities or technical discussions, I'm often able to respond much more quickly.
                 </p>
               </div>
             </div>

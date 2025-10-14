@@ -17,71 +17,71 @@ const Projects = () => {
 
   const projects = [
     {
-      id: 'campus-network',
-      title: 'Campus Network',
-      description: 'Implementation of a Campus Area Network (CAN) using Cisco Packet Tracer, configuring local area networks within a limited geographical area.',
-      longDescription: 'Developed a comprehensive Campus Area Network (CAN) implementation using Cisco Packet Tracer, designed to connect multiple buildings within a university campus. The network included configuration of VLANs, inter-VLAN routing, security measures, and quality of service (QoS) policies to ensure optimal performance for different types of network traffic.',
-      image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-      category: 'networking',
-      technologies: ['Cisco Packet Tracer', 'LAN/WAN', 'Network Security', 'Routing & Switching'],
+      id: 'business-automation',
+      title: 'Business Automation Platform',
+      description: 'Streamlined internal operations for a client using Node.js & React, automating workflows and improving efficiency.',
+      longDescription: 'Developed a comprehensive business automation platform that streamlined internal operations and improved workflow efficiency. Built with the MERN stack, the platform automated repetitive tasks, integrated with existing systems, and provided real-time analytics to track operational metrics.',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      category: 'fullstack',
+      technologies: ['Node.js', 'React', 'MongoDB', 'Express.js', 'REST API'],
       links: {
-        demo: 'https://example.com/campus-network-demo',
-        github: 'https://github.com/example/campus-network'
+        demo: '#',
+        github: '#'
       },
-      date: 'July 2022',
+      date: 'March 2025',
       achievements: [
-        'Implemented end-to-end network design for a university campus',
-        'Configured advanced routing protocols for optimal data flow',
-        'Set up network security measures including firewalls and access control lists',
-        'Utilized network monitoring tools to identify and resolve performance issues'
+        'Reduced manual processing time by 70%',
+        'Integrated with 5+ third-party services',
+        'Improved operational efficiency by 45%',
+        'Built scalable microservices architecture'
       ]
     },
     {
-      id: 'server-monitoring',
-      title: 'Server Monitoring Dashboard',
-      description: 'A comprehensive monitoring solution for Linux servers, providing real-time metrics and alerts for system administrators.',
-      longDescription: 'Developed and implemented a server monitoring dashboard that provides real-time metrics for Linux servers. The solution tracks CPU usage, memory utilization, disk space, network traffic, and other critical metrics. It also includes an alerting system that notifies administrators when predefined thresholds are exceeded.',
-      image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-      category: 'devops',
-      technologies: ['Nagios', 'Grafana', 'Prometheus', 'Linux', 'Bash Scripting'],
+      id: 'task-management',
+      title: 'Task Management Dashboard',
+      description: 'Built a responsive SaaS dashboard for remote teams with real-time collaboration features.',
+      longDescription: 'Created a modern task management SaaS platform designed for remote teams. The dashboard features real-time updates, team collaboration tools, project tracking, and analytics. Built with React and Node.js, it provides an intuitive interface for managing complex projects.',
+      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      category: 'fullstack',
+      technologies: ['React', 'Node.js', 'PostgreSQL', 'WebSockets', 'Tailwind CSS'],
       links: {
-        demo: 'https://example.com/monitoring-dashboard',
-        github: 'https://github.com/example/server-monitoring'
+        demo: '#',
+        github: '#'
       },
-      date: 'September 2023',
+      date: 'August 2025',
       achievements: [
-        'Reduced server downtime by 65% through proactive monitoring',
-        'Implemented automated alerting system for critical server issues',
-        'Created custom dashboards for different stakeholders',
-        'Integrated with existing IT infrastructure for seamless deployment'
+        'Enabled real-time collaboration for 100+ teams',
+        'Implemented advanced filtering and search',
+        'Built responsive design for all devices',
+        'Integrated with popular productivity tools'
       ]
     },
     {
-      id: 'aws-infrastructure',
-      title: 'AWS Infrastructure as Code',
-      description: 'Implementation of infrastructure as code (IaC) principles using AWS CloudFormation for consistent and repeatable deployments.',
-      longDescription: 'Designed and implemented an Infrastructure as Code (IaC) solution using AWS CloudFormation to automate the provisioning of cloud resources. The project included templates for VPC configuration, EC2 instances, S3 buckets, IAM roles, and security groups. This approach ensured consistent, version-controlled infrastructure deployments across different environments.',
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      id: 'api-infrastructure',
+      title: 'API Infrastructure Platform',
+      description: 'Designed a scalable API gateway architecture with microservices for high-traffic applications.',
+      longDescription: 'Architected and implemented a robust API infrastructure platform using microservices architecture. The platform handles high-traffic loads, provides rate limiting, authentication, and monitoring capabilities. Built with focus on scalability, security, and performance.',
+      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
       category: 'devops',
-      technologies: ['AWS CloudFormation', 'AWS CLI', 'YAML', 'Infrastructure as Code', 'CI/CD'],
+      technologies: ['Node.js', 'Docker', 'Kubernetes', 'Redis', 'Nginx', 'AWS'],
       links: {
-        demo: 'https://example.com/aws-iac-demo',
-        github: 'https://github.com/example/aws-iac'
+        demo: '#',
+        github: '#'
       },
-      date: 'January 2024',
+      date: 'November 2025',
       achievements: [
-        'Reduced infrastructure deployment time from days to hours',
-        'Eliminated configuration drift across environments',
-        'Implemented comprehensive documentation for all infrastructure components',
-        'Integrated with CI/CD pipeline for automated deployments'
+        'Handles 10K+ requests per second',
+        'Implemented auto-scaling with Kubernetes',
+        '99.9% uptime with zero-downtime deployments',
+        'Built comprehensive API documentation'
       ]
     }
   ];
 
   const categories = [
     { id: 'all', name: 'All Projects' },
-    { id: 'devops', name: 'DevOps' },
-    { id: 'networking', name: 'Networking' }
+    { id: 'fullstack', name: 'Full-Stack' },
+    { id: 'devops', name: 'DevOps' }
   ];
 
   const filteredProjects = selectedCategory === 'all' 

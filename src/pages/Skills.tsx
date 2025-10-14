@@ -1,140 +1,119 @@
-
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { 
-  Terminal, 
+  Code2, 
   Server, 
-  Shield, 
-  Network, 
-  MonitorSmartphone,
-  GitBranch,
-  Database,
-  FileText,
-  Cloud
+  Cloud, 
+  Database, 
+  GitBranch, 
+  Layers,
+  Network,
+  Shield,
+  Rocket,
+  Users,
+  Target,
+  Lightbulb
 } from 'lucide-react';
-import { 
-  RadarChart, 
-  PolarGrid, 
-  PolarAngleAxis, 
-  PolarRadiusAxis, 
-  Radar, 
-  ResponsiveContainer,
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend
-} from 'recharts';
 
 const Skills = () => {
-  const [activeTab, setActiveTab] = useState('overview');
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
-  // Define skill data
+
   const skillCategories = [
     {
-      name: "Operating Systems",
-      items: [
-        { name: "Linux (RHEL)", level: 85 },
-        { name: "Linux (Ubuntu)", level: 80 },
-        { name: "Linux (CentOS)", level: 75 },
-        { name: "Windows Server", level: 60 },
-      ],
-      icon: <Terminal size={32} />,
-      color: "#3b82f6"
+      title: "Full-Stack Development",
+      icon: Code2,
+      color: "from-blue-500 to-cyan-500",
+      skills: [
+        "MERN Stack (MongoDB, Express.js, React, Node.js)",
+        "PHP & Laravel Framework",
+        "RESTful API Development",
+        "TypeScript & JavaScript",
+        "Responsive Web Design"
+      ]
     },
     {
-      name: "Cloud Services",
-      items: [
-        { name: "AWS EC2", level: 75 },
-        { name: "AWS S3", level: 70 },
-        { name: "AWS IAM", level: 65 },
-        { name: "AWS VPC", level: 60 },
-      ],
-      icon: <Cloud size={32} />,
-      color: "#f97316"
+      title: "Software Architecture",
+      icon: Layers,
+      color: "from-purple-500 to-pink-500",
+      skills: [
+        "Microservices Architecture",
+        "System Design & Scalability",
+        "Design Patterns",
+        "API Gateway Design",
+        "Database Schema Design"
+      ]
     },
     {
-      name: "Server Administration",
-      items: [
-        { name: "Installation", level: 90 },
-        { name: "Configuration", level: 85 },
-        { name: "Patching", level: 80 },
-        { name: "User Management", level: 85 },
-      ],
-      icon: <Server size={32} />,
-      color: "#10b981"
+      title: "DevOps & Cloud",
+      icon: Cloud,
+      color: "from-green-500 to-emerald-500",
+      skills: [
+        "Docker & Kubernetes",
+        "CI/CD Pipelines",
+        "AWS Cloud Services",
+        "Infrastructure as Code",
+        "Monitoring & Logging"
+      ]
     },
     {
-      name: "Security",
-      items: [
-        { name: "Patch Management", level: 85 },
-        { name: "Access Control", level: 75 },
-        { name: "Security Auditing", level: 65 },
-      ],
-      icon: <Shield size={32} />,
-      color: "#ef4444"
+      title: "Product Strategy",
+      icon: Target,
+      color: "from-orange-500 to-red-500",
+      skills: [
+        "Product Roadmap Planning",
+        "Market Analysis",
+        "User-Centric Design",
+        "Agile Methodologies",
+        "MVP Development"
+      ]
     },
     {
-      name: "Network Management",
-      items: [
-        { name: "LAN/WAN", level: 75 },
-        { name: "Cisco Packet Tracer", level: 80 },
-        { name: "Firewall Configuration", level: 70 },
-        { name: "Router Configuration", level: 65 },
-      ],
-      icon: <Network size={32} />,
-      color: "#8b5cf6"
+      title: "Technical Leadership",
+      icon: Users,
+      color: "from-indigo-500 to-blue-500",
+      skills: [
+        "Team Building & Mentorship",
+        "Code Review & Quality",
+        "Technical Documentation",
+        "Cross-functional Collaboration",
+        "Performance Optimization"
+      ]
     },
     {
-      name: "Project Management",
-      items: [
-        { name: "JIRA", level: 75 },
-        { name: "Remedy ITSM", level: 70 },
-        { name: "GitHub", level: 65 },
-      ],
-      icon: <GitBranch size={32} />,
-      color: "#ec4899"
+      title: "Innovation",
+      icon: Lightbulb,
+      color: "from-yellow-500 to-orange-500",
+      skills: [
+        "Problem Solving",
+        "Strategic Thinking",
+        "Process Improvement",
+        "Technology Research",
+        "Business Strategy"
+      ]
     }
   ];
-  
-  // For radar chart
-  const radarData = [
-    { subject: 'Linux Systems', A: 85, fullMark: 100 },
-    { subject: 'Cloud Services', A: 70, fullMark: 100 },
-    { subject: 'Server Admin', A: 85, fullMark: 100 },
-    { subject: 'Security', A: 75, fullMark: 100 },
-    { subject: 'Networking', A: 70, fullMark: 100 },
-    { subject: 'Project Tools', A: 70, fullMark: 100 },
+
+  const technologies = [
+    { name: "React", category: "Frontend" },
+    { name: "Node.js", category: "Backend" },
+    { name: "MongoDB", category: "Database" },
+    { name: "PostgreSQL", category: "Database" },
+    { name: "Docker", category: "DevOps" },
+    { name: "Kubernetes", category: "DevOps" },
+    { name: "AWS", category: "Cloud" },
+    { name: "Git", category: "Tools" },
+    { name: "Laravel", category: "Backend" },
+    { name: "TypeScript", category: "Language" },
+    { name: "Express.js", category: "Backend" },
+    { name: "Redis", category: "Database" },
+    { name: "Nginx", category: "Infrastructure" },
+    { name: "Jenkins", category: "DevOps" },
+    { name: "GraphQL", category: "API" },
   ];
-  
-  // For bar chart
-  const barData = skillCategories.reduce((acc, category) => {
-    category.items.forEach(item => {
-      acc.push({
-        name: item.name,
-        level: item.level,
-        color: category.color
-      });
-    });
-    return acc;
-  }, []);
-  
-  // Helper function for skill level text
-  const getSkillLevelText = (level) => {
-    if (level >= 90) return "Expert";
-    if (level >= 75) return "Advanced";
-    if (level >= 60) return "Intermediate";
-    return "Beginner";
-  };
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -147,174 +126,108 @@ const Skills = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-16"
             >
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Technical Skills</h1>
+              <h1 className="text-4xl md:text-5xl font-bold font-display mb-6">Skills & Expertise</h1>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                As a DevOps Engineer, I've developed a wide range of technical skills focused on
-                Linux server management, AWS services, and networking technologies.
+                A comprehensive overview of my technical skills, leadership capabilities, 
+                and the technologies I work with to build exceptional digital solutions.
               </p>
             </motion.div>
-            
-            <Tabs defaultValue="overview" value={activeTab} onValueChange={setActiveTab} className="max-w-5xl mx-auto">
-              <TabsList className="grid w-full grid-cols-3 mb-8">
-                <TabsTrigger value="overview">Overview</TabsTrigger>
-                <TabsTrigger value="details">Detailed Skills</TabsTrigger>
-                <TabsTrigger value="charts">Skill Charts</TabsTrigger>
-              </TabsList>
-              
-              <TabsContent value="overview" className="mt-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {skillCategories.map((category, index) => (
-                    <motion.div
-                      key={category.name}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3, delay: index * 0.1 }}
-                      whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                      className="bg-card p-6 rounded-lg shadow-sm border border-border hover:border-primary/50 transition-colors"
-                    >
-                      <div className="flex items-center gap-3 mb-4">
-                        <div className="text-primary">{category.icon}</div>
-                        <h3 className="text-xl font-semibold">{category.name}</h3>
-                      </div>
-                      
-                      <div className="space-y-3">
-                        {category.items.map((skill, idx) => (
-                          <div key={idx}>
-                            <div className="flex justify-between text-sm mb-1">
-                              <span>{skill.name}</span>
-                              <span className="text-muted-foreground">{getSkillLevelText(skill.level)}</span>
-                            </div>
-                            <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
-                              <div 
-                                className="h-full rounded-full" 
-                                style={{ 
-                                  width: `${skill.level}%`,
-                                  backgroundColor: category.color
-                                }}
-                              />
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-              </TabsContent>
-              
-              <TabsContent value="details" className="mt-4">
-                <div className="space-y-16">
-                  {skillCategories.map((category, index) => (
-                    <motion.div
-                      key={category.name}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: index * 0.1 }}
-                      className="relative"
-                    >
-                      <div className="flex items-center gap-3 mb-6">
-                        <div 
-                          className="text-primary p-3 rounded-full" 
-                          style={{ backgroundColor: `${category.color}20` }}
-                        >
-                          {category.icon}
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+              {skillCategories.map((category, index) => {
+                const Icon = category.icon;
+                return (
+                  <motion.div
+                    key={category.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    className="group"
+                  >
+                    <div className="relative h-full">
+                      <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-5 rounded-2xl transform group-hover:scale-105 transition-transform`} />
+                      <div className="relative bg-card p-6 rounded-2xl border border-border h-full hover:shadow-lg transition-shadow">
+                        <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${category.color} mb-4`}>
+                          <Icon className="h-6 w-6 text-white" />
                         </div>
-                        <h3 className="text-2xl font-bold">{category.name}</h3>
+                        <h3 className="text-xl font-semibold font-display mb-4">{category.title}</h3>
+                        <ul className="space-y-2">
+                          {category.skills.map((skill, idx) => (
+                            <li key={idx} className="flex items-start text-muted-foreground">
+                              <span className="mr-2 text-primary mt-1">•</span>
+                              <span className="text-sm">{skill}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
-                      
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6 pl-4 border-l-2 border-muted ml-6">
-                        {category.items.map((skill, idx) => (
-                          <motion.div
-                            key={idx}
-                            whileHover={{ x: 5, transition: { duration: 0.2 } }}
-                            className="p-4 bg-card rounded-lg border border-border"
-                          >
-                            <h4 className="text-lg font-medium mb-3">{skill.name}</h4>
-                            <div className="w-full bg-muted rounded-full h-3 mb-3 overflow-hidden">
-                              <div 
-                                className="h-full rounded-full" 
-                                style={{ 
-                                  width: `${skill.level}%`,
-                                  backgroundColor: category.color
-                                }}
-                              />
-                            </div>
-                            <div className="flex justify-between text-sm">
-                              <span className="text-muted-foreground">Proficiency</span>
-                              <span className="font-medium" style={{ color: category.color }}>
-                                {getSkillLevelText(skill.level)}
-                              </span>
-                            </div>
-                          </motion.div>
-                        ))}
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-              </TabsContent>
-              
-              <TabsContent value="charts" className="mt-4">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5 }}
-                    className="bg-card p-6 rounded-lg shadow-sm border border-border"
-                  >
-                    <h3 className="text-xl font-semibold mb-4">Skill Overview</h3>
-                    <div className="h-80">
-                      <ResponsiveContainer width="100%" height="100%">
-                        <RadarChart outerRadius="80%" data={radarData}>
-                          <PolarGrid />
-                          <PolarAngleAxis dataKey="subject" />
-                          <PolarRadiusAxis angle={30} domain={[0, 100]} />
-                          <Radar 
-                            name="Skills" 
-                            dataKey="A" 
-                            stroke="#3b82f6" 
-                            fill="#3b82f6" 
-                            fillOpacity={0.6} 
-                          />
-                          <Tooltip />
-                          <Legend />
-                        </RadarChart>
-                      </ResponsiveContainer>
                     </div>
                   </motion.div>
-                  
+                );
+              })}
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="mt-20"
+            >
+              <h2 className="text-3xl font-bold font-display text-center mb-12">Technologies & Tools</h2>
+              <div className="flex flex-wrap justify-center gap-3 max-w-5xl mx-auto">
+                {technologies.map((tech, index) => (
                   <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                    className="bg-card p-6 rounded-lg shadow-sm border border-border"
+                    key={tech.name}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.3, delay: index * 0.03 }}
+                    className="group relative"
                   >
-                    <h3 className="text-xl font-semibold mb-4">Top Skills</h3>
-                    <div className="h-80">
-                      <ResponsiveContainer width="100%" height="100%">
-                        <BarChart 
-                          data={barData.sort((a, b) => b.level - a.level).slice(0, 8)} 
-                          layout="vertical"
-                          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-                        >
-                          <CartesianGrid strokeDasharray="3 3" />
-                          <XAxis type="number" domain={[0, 100]} />
-                          <YAxis type="category" dataKey="name" width={150} />
-                          <Tooltip />
-                          <Legend />
-                          <Bar 
-                            dataKey="level" 
-                            name="Proficiency" 
-                            fill="#3b82f6" 
-                            radius={[0, 4, 4, 0]}
-                          />
-                        </BarChart>
-                      </ResponsiveContainer>
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-10 rounded-full transition-opacity" />
+                    <div className="relative px-5 py-2.5 bg-muted hover:bg-muted/80 rounded-full border border-border transition-colors">
+                      <span className="text-sm font-medium">{tech.name}</span>
+                      <span className="ml-2 text-xs text-muted-foreground">• {tech.category}</span>
                     </div>
                   </motion.div>
-                </div>
-              </TabsContent>
-            </Tabs>
+                ))}
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="mt-20 bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl p-8 md:p-12"
+            >
+              <h2 className="text-3xl font-bold font-display text-center mb-8">Core Competencies</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                {[
+                  "Technology Leadership & Strategy",
+                  "Scalable Software Architecture",
+                  "Full-Stack Development (MERN, PHP/Laravel)",
+                  "DevOps, CI/CD & Cloud Infrastructure",
+                  "Agile Product Development & Mentorship",
+                  "Business Strategy & Innovation"
+                ].map((competency, index) => (
+                  <motion.div
+                    key={competency}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                    className="flex items-start"
+                  >
+                    <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0" />
+                    <p className="text-lg">{competency}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
           </div>
         </section>
       </main>
