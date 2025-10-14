@@ -16,11 +16,53 @@ const Experience = () => {
 
   const experiences = [
     {
+      id: "skilllogic",
+      title: "Co-Founder & Tech Lead",
+      company: "SkillLogic Technologies",
+      location: "Uttar Pradesh, India (On-site)",
+      period: "September 2025 – Present",
+      category: "leadership",
+      responsibilities: [
+        "Lead the technology and strategy vision for building impactful, scalable software solutions",
+        "Combine innovation, business strategy, and technology execution to create products that solve real-world problems",
+        "Build and manage strong engineering teams while fostering collaboration and innovation",
+        "Transform ideas into actionable solutions that drive lasting client success",
+        "Define product architecture and ensure technical excellence across all projects"
+      ],
+      projects: [
+        {
+          title: "Technology Strategy & Leadership",
+          description: "Leading the overall technology vision and strategy for SkillLogic, ensuring scalable architecture and innovative solutions.",
+          technologies: ["IT Strategy", "Product Strategy", "Team Leadership", "Software Architecture", "Full-Stack Development"]
+        }
+      ]
+    },
+    {
+      id: "software-engineer",
+      title: "Software Engineer",
+      company: "Remote Position",
+      location: "Remote",
+      period: "May 2025 – October 2025",
+      category: "devops",
+      responsibilities: [
+        "Developed and maintained scalable software solutions",
+        "Collaborated with cross-functional teams on product development",
+        "Implemented best practices for code quality and system reliability"
+      ],
+      projects: [
+        {
+          title: "Software Development",
+          description: "Built and maintained software solutions with focus on scalability and performance.",
+          technologies: ["Full-Stack Development", "System Design", "DevOps"]
+        }
+      ]
+    },
+    {
       id: "starter-you",
       title: "AWS DevOps Engineer",
       company: "Starter You, Inc.",
       location: "United States - Remote",
-      period: "November 2024 – Present",
+      period: "November 2024 – May 2025",
       category: "devops",
       responsibilities: [
         "Configure and manage AWS services per project requirements",
@@ -109,14 +151,15 @@ const Experience = () => {
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">My Experience</h1>
               <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-12">
-                I've worked with various companies, focusing on Linux server management, AWS services, 
-                and networking. Here's a detailed look at my professional journey.
+                From co-founding a technology company to managing complex infrastructure, 
+                my journey spans leadership, DevOps engineering, and system administration.
               </p>
             </motion.div>
             
             <Tabs defaultValue="all" className="w-full max-w-3xl mx-auto" onValueChange={setActiveTab}>
-              <TabsList className="grid w-full grid-cols-3 mb-8">
+              <TabsList className="grid w-full grid-cols-4 mb-8">
                 <TabsTrigger value="all">All</TabsTrigger>
+                <TabsTrigger value="leadership">Leadership</TabsTrigger>
                 <TabsTrigger value="devops">DevOps</TabsTrigger>
                 <TabsTrigger value="system">System Admin</TabsTrigger>
               </TabsList>
@@ -151,7 +194,8 @@ const Experience = () => {
                             
                             <div className="flex items-center">
                               <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
-                                {exp.category === "devops" ? "DevOps" : 
+                                {exp.category === "leadership" ? "Leadership" :
+                                 exp.category === "devops" ? "DevOps" : 
                                  exp.category === "system" ? "System Admin" : "Networking"}
                               </span>
                             </div>

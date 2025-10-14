@@ -29,11 +29,11 @@ const Index = () => {
               >
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
                   <span className="block">Hi, I'm Arpit</span>
-                  <span className="text-primary block mt-2">DevOps Engineer</span>
+                  <span className="text-primary block mt-2">Co-Founder & Tech Lead</span>
                 </h1>
 
                 <p className="text-lg md:text-xl text-muted-foreground mt-4 max-w-lg">
-                Experienced in Linux server management, AWS, and networking. I specialize in building and maintaining stable and efficient systems..
+                Building impactful, scalable software solutions at SkillLogic Technologies. Combining innovation, business strategy, and technology execution to create products that solve real-world problems.
                 </p>
 
                 <div className="flex flex-wrap gap-4 pt-4">
@@ -81,13 +81,13 @@ const Index = () => {
                 <div className="relative">
                   <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary shadow-xl">
                     <img 
-                      src="/lovable-uploads/3bb83e37-0739-4bc1-9b0d-6deb3f6452ef.png" 
+                      src="/arpit-professional.jpg" 
                       alt="Arpit Shrivastava" 
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="absolute -bottom-6 -right-6 bg-background rounded-lg px-4 py-2 shadow-lg border border-border">
-                    <p className="font-medium text-primary">Available for work</p>
+                    <p className="font-medium text-primary">Co-Founder @ SkillLogic</p>
                   </div>
                 </div>
               </motion.div>
@@ -155,10 +155,10 @@ const Index = () => {
         {/* Call to action */}
         <section className="py-20 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">Interested in working together?</h2>
+            <h2 className="text-3xl font-bold mb-6">Let's Build Something Together</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-              I'm currently available for full-time positions.
-              If you're looking for a DevOps Engineer to help with your infrastructure, let's talk!
+              Interested in collaborating on innovative solutions or discussing technology strategy? 
+              I'm always open to meaningful conversations and partnerships.
             </p>
             <Button asChild size="lg" variant="secondary">
               <Link to="/contact">Get in Touch</Link>

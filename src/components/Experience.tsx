@@ -12,10 +12,33 @@ interface ExperienceItem {
 
 const experienceData: ExperienceItem[] = [
   {
+    company: "SkillLogic Technologies",
+    location: "Uttar Pradesh, India (On-site)",
+    position: "Co-Founder & Tech Lead",
+    period: "September 2025 – Present",
+    responsibilities: [
+      "Lead the technology and strategy vision for building impactful, scalable software solutions.",
+      "Combine innovation, business strategy, and technology execution to create products that solve real-world problems.",
+      "Build and manage strong engineering teams while fostering collaboration and innovation.",
+      "Transform ideas into actionable solutions that drive lasting client success."
+    ]
+  },
+  {
+    company: "Remote Position",
+    location: "Remote",
+    position: "Software Engineer",
+    period: "May 2025 – October 2025",
+    responsibilities: [
+      "Developed and maintained scalable software solutions.",
+      "Collaborated with cross-functional teams on product development.",
+      "Implemented best practices for code quality and system reliability."
+    ]
+  },
+  {
     company: "Starter You, Inc.",
     location: "United States - Remote",
     position: "AWS DevOps Engineer",
-    period: "November 2024 – Present",
+    period: "November 2024 – May 2025",
     responsibilities: [
       "Configured and managed AWS services per project requirements.",
       "Provided access and created user accounts for new employees.",

@@ -10,7 +10,7 @@ const Header = () => {
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-resume-primary shadow-lg">
             <img 
-              src="/lovable-uploads/3bb83e37-0739-4bc1-9b0d-6deb3f6452ef.png" 
+              src="/arpit-professional.jpg" 
               alt="Arpit Shrivastava" 
               className="w-full h-full object-cover"
             />
@@ -18,7 +18,7 @@ const Header = () => {
           
           <div className="text-center md:text-left flex-1">
             <h1 className="text-3xl md:text-4xl font-bold text-resume-dark">Arpit Shrivastava</h1>
-            <h2 className="text-xl md:text-2xl font-medium text-resume-primary mt-2">DevOps Engineer</h2>
+            <h2 className="text-xl md:text-2xl font-medium text-resume-primary mt-2">Co-Founder & Tech Lead</h2>
             
             <div className="mt-4 flex flex-col md:flex-row flex-wrap gap-3 md:gap-6 justify-center md:justify-start">
               <ContactItem icon={<MapPin size={18} />} text="Civil Lines Bhadohi, Uttar Pradesh" />
