@@ -17,10 +17,10 @@ const experienceData: ExperienceItem[] = [
     position: "Co-Founder & Tech Lead",
     period: "September 2025 – Present",
     responsibilities: [
-      "Lead the technology and strategy vision for building impactful, scalable software solutions.",
-      "Combine innovation, business strategy, and technology execution to create products that solve real-world problems.",
-      "Build and manage strong engineering teams while fostering collaboration and innovation.",
-      "Transform ideas into actionable solutions that drive lasting client success."
+      "Lead the technology vision and strategy for building scalable, impactful software solutions that drive business success.",
+      "Blend innovation, execution, and collaboration to deliver real-world results.",
+      "Define product architecture and ensure reliability, efficiency, and scalability.",
+      "Build and manage engineering teams while fostering technical excellence."
     ]
   },
   {
@@ -29,9 +29,9 @@ const experienceData: ExperienceItem[] = [
     position: "Software Engineer",
     period: "May 2025 – October 2025",
     responsibilities: [
-      "Developed and maintained scalable software solutions.",
-      "Collaborated with cross-functional teams on product development.",
-      "Implemented best practices for code quality and system reliability."
+      "Worked on full-stack projects using MERN stack and PHP/Laravel.",
+      "Delivered production-ready solutions with focus on performance and scalability.",
+      "Implemented DevOps pipelines using Docker, Kubernetes, and CI/CD workflows."
     ]
   },
   {

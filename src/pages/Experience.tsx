@@ -23,17 +23,17 @@ const Experience = () => {
       period: "September 2025 – Present",
       category: "leadership",
       responsibilities: [
-        "Lead the technology and strategy vision for building impactful, scalable software solutions",
-        "Combine innovation, business strategy, and technology execution to create products that solve real-world problems",
-        "Build and manage strong engineering teams while fostering collaboration and innovation",
-        "Transform ideas into actionable solutions that drive lasting client success",
-        "Define product architecture and ensure technical excellence across all projects"
+        "Lead the technology vision and strategy for building scalable, impactful software solutions that drive business success",
+        "Blend innovation, execution, and collaboration to deliver real-world results",
+        "Define product architecture and ensure reliability, efficiency, and scalability",
+        "Build and manage engineering teams while fostering technical excellence",
+        "Drive business strategy through technology innovation and leadership"
       ],
       projects: [
         {
-          title: "Technology Strategy & Leadership",
-          description: "Leading the overall technology vision and strategy for SkillLogic, ensuring scalable architecture and innovative solutions.",
-          technologies: ["IT Strategy", "Product Strategy", "Team Leadership", "Software Architecture", "Full-Stack Development"]
+          title: "Technology Leadership & Strategy",
+          description: "Leading technology vision, architecture, and strategy to deliver scalable, high-impact solutions.",
+          technologies: ["IT Strategy", "Product Strategy", "Software Architecture", "Team Leadership", "Full-Stack Development"]
         }
       ]
     },
@@ -45,15 +45,16 @@ const Experience = () => {
       period: "May 2025 – October 2025",
       category: "devops",
       responsibilities: [
-        "Developed and maintained scalable software solutions",
-        "Collaborated with cross-functional teams on product development",
-        "Implemented best practices for code quality and system reliability"
+        "Worked on full-stack projects using MERN stack and PHP/Laravel",
+        "Delivered production-ready solutions with focus on performance and scalability",
+        "Implemented DevOps pipelines using Docker, Kubernetes, and CI/CD workflows",
+        "Collaborated with cross-functional teams on product development"
       ],
       projects: [
         {
-          title: "Software Development",
-          description: "Built and maintained software solutions with focus on scalability and performance.",
-          technologies: ["Full-Stack Development", "System Design", "DevOps"]
+          title: "Full-Stack Development & DevOps",
+          description: "Built production-ready applications and implemented modern DevOps practices for scalable deployment.",
+          technologies: ["MERN Stack", "PHP/Laravel", "Docker", "Kubernetes", "CI/CD"]
         }
       ]
     },

@@ -33,7 +33,7 @@ const Index = () => {
                 </h1>
 
                 <p className="text-lg md:text-xl text-muted-foreground mt-4 max-w-lg">
-                Building impactful, scalable software solutions at SkillLogic Technologies. Combining innovation, business strategy, and technology execution to create products that solve real-world problems.
+                Technology leader and entrepreneur focused on building scalable, high-impact digital solutions that connect innovation with real-world business results.
                 </p>
 
                 <div className="flex flex-wrap gap-4 pt-4">
@@ -108,11 +108,11 @@ const Index = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.1 }}
               >
-                <h3 className="text-xl font-semibold mb-3">Server Management</h3>
+                <h3 className="text-xl font-semibold mb-3">Technology Leadership</h3>
                 <p className="text-muted-foreground mb-4">
-                  Installation, configuration, and maintenance of Linux servers ensuring optimal performance.
+                  Leading technology vision and strategy for scalable, high-impact software solutions.
                 </p>
-                <Link to="/skills" className="text-primary hover:underline inline-flex items-center">
+                <Link to="/about" className="text-primary hover:underline inline-flex items-center">
                   Learn more <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </motion.div>
@@ -124,9 +124,9 @@ const Index = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.2 }}
               >
-                <h3 className="text-xl font-semibold mb-3">AWS Services</h3>
+                <h3 className="text-xl font-semibold mb-3">Full-Stack Development</h3>
                 <p className="text-muted-foreground mb-4">
-                  Configuration and management of AWS services according to project requirements.
+                  Building production-ready applications with MERN stack, PHP/Laravel, and modern frameworks.
                 </p>
                 <Link to="/skills" className="text-primary hover:underline inline-flex items-center">
                   Learn more <ArrowRight className="ml-2 h-4 w-4" />
@@ -140,9 +140,9 @@ const Index = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.3 }}
               >
-                <h3 className="text-xl font-semibold mb-3">Networking</h3>
+                <h3 className="text-xl font-semibold mb-3">DevOps & Cloud</h3>
                 <p className="text-muted-foreground mb-4">
-                  Management of LAN/WAN technologies and configuration of networking devices.
+                  Implementing CI/CD pipelines, containerization, and cloud infrastructure management.
                 </p>
                 <Link to="/skills" className="text-primary hover:underline inline-flex items-center">
                   Learn more <ArrowRight className="ml-2 h-4 w-4" />

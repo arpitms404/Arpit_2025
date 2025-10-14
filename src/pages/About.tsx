@@ -22,16 +22,28 @@ const About = () => {
 
   const timeline = [
     { 
+      year: '2025', 
+      title: 'Co-Founder & Tech Lead', 
+      company: 'SkillLogic Technologies', 
+      description: 'Leading technology vision and strategy for building scalable, high-impact software solutions.'
+    },
+    { 
+      year: '2025', 
+      title: 'Software Engineer', 
+      company: 'Remote Position', 
+      description: 'Full-stack development with MERN stack, PHP/Laravel, and DevOps implementation.'
+    },
+    { 
       year: '2024', 
       title: 'AWS DevOps Engineer', 
       company: 'Starter You, Inc.', 
-      description: 'Remote position focusing on AWS services and Linux systems management.'
+      description: 'AWS services management and Linux systems administration.'
     },
     { 
       year: '2024', 
       title: 'System Engineer', 
       company: 'Delta 360 Services Pvt Ltd', 
-      description: 'Focused on Linux server administration and system monitoring.'
+      description: 'Linux server administration and system monitoring.'
     },
     { 
       year: '2022', 
@@ -59,17 +71,24 @@ const About = () => {
     },
   ];
 
+  const coreCompetencies = [
+    'Technology Leadership & Strategy',
+    'Scalable Software Architecture',
+    'Full-Stack Development (MERN, PHP/Laravel)',
+    'DevOps, CI/CD & Cloud Infrastructure',
+    'Agile Product Development & Mentorship',
+    'Business Strategy & Innovation'
+  ];
+
   const technologies = [
-    { name: 'Linux', icon: <Terminal size={32} />, category: 'Operating Systems' },
+    { name: 'MERN Stack', icon: <Database size={32} />, category: 'Full-Stack' },
+    { name: 'PHP/Laravel', icon: <Globe size={32} />, category: 'Full-Stack' },
+    { name: 'Docker', icon: <Server size={32} />, category: 'DevOps' },
+    { name: 'Kubernetes', icon: <Network size={32} />, category: 'DevOps' },
+    { name: 'CI/CD', icon: <GitBranch size={32} />, category: 'DevOps' },
     { name: 'AWS', icon: <Cloud size={32} />, category: 'Cloud' },
-    { name: 'Networking', icon: <Network size={32} />, category: 'Infrastructure' },
-    { name: 'Security', icon: <Shield size={32} />, category: 'Infrastructure' },
-    { name: 'JIRA', icon: <TicketIcon size={32} />, category: 'Tools' },
-    { name: 'GitHub', icon: <GitBranch size={32} />, category: 'Tools' },
-    { name: 'Servers', icon: <Server size={32} />, category: 'Infrastructure' },
-    { name: 'Windows Server', icon: <Monitor size={32} />, category: 'Operating Systems' },
-    { name: 'Hardware', icon: <Cpu size={32} />, category: 'Infrastructure' },
-    { name: 'Databases', icon: <Database size={32} />, category: 'Infrastructure' },
+    { name: 'Linux', icon: <Terminal size={32} />, category: 'Operating Systems' },
+    { name: 'System Design', icon: <Cpu size={32} />, category: 'Architecture' },
   ];
 
   return (
@@ -90,7 +109,7 @@ const About = () => {
                 <div className="md:w-1/3">
                   <div className="rounded-lg overflow-hidden border-4 border-primary shadow-lg">
                     <img 
-                      src="/lovable-uploads/3bb83e37-0739-4bc1-9b0d-6deb3f6452ef.png" 
+                      src="/arpit-professional.jpg" 
                       alt="Arpit Shrivastava" 
                       className="w-full h-auto"
                     />
@@ -98,19 +117,24 @@ const About = () => {
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-lg mb-4">
-                    I'm a DevOps Engineer with expertise in Linux server management, AWS, and networking technologies.
-                    My journey in the tech world began with a deep fascination for how systems work and how they can be
-                    optimized to deliver reliable performance.
+                    Hi, I'm Arpit — Co-Founder & Tech Lead at SkillLogic Technologies.
                   </p>
                   <p className="text-lg mb-4">
-                    With a strong problem-solving approach, I enjoy troubleshooting complex system issues and implementing
-                    robust infrastructure solutions. I'm passionate about automating processes and improving system reliability
-                    through best practices in DevOps methodologies.
+                    I'm a technology leader and entrepreneur focused on building scalable, high-impact digital solutions 
+                    that connect innovation with real-world business results.
+                  </p>
+                  <p className="text-lg mb-4">
+                    At SkillLogic Technologies, I lead the technology vision, architecture, and strategy, ensuring every 
+                    product we build is reliable, efficient, and designed for growth. My experience spans software architecture, 
+                    full-stack development (MERN, PHP/Laravel), and DevOps practices such as Docker, Kubernetes, and CI/CD workflows.
+                  </p>
+                  <p className="text-lg mb-4">
+                    I'm deeply passionate about team building, technical excellence, and problem solving — transforming ideas 
+                    into well-executed products that deliver measurable impact.
                   </p>
                   <p className="text-lg">
-                    Currently based in Uttar Pradesh, India, I work remotely with clients and companies across the globe.
-                    I'm continuously learning and expanding my skillset to stay current with emerging technologies in the
-                    cloud and infrastructure space.
+                    I believe great technology isn't just about writing code — it's about creating meaningful change through 
+                    clarity, collaboration, and innovation.
                   </p>
                 </div>
               </div>
@@ -162,15 +186,39 @@ const About = () => {
           </div>
         </section>
 
+        {/* Core Competencies */}
+        <section className="py-16 bg-muted/50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold mb-4 text-center">Core Competencies</h2>
+            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+              Key areas of expertise that drive my approach to technology leadership and product development.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+              {coreCompetencies.map((competency, index) => (
+                <motion.div
+                  key={index}
+                  className="bg-card border border-border rounded-lg p-4 text-center"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: index * 0.05 }}
+                >
+                  <p className="font-medium">{competency}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Technologies */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-4 text-center">Technologies I Work With</h2>
+            <h2 className="text-3xl font-bold mb-4 text-center">Technologies & Tools</h2>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-              These are the technologies and tools I use regularly in my work as a DevOps Engineer.
+              Technology stack I work with to build scalable, production-ready solutions.
             </p>
             
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
               {technologies.map((tech, index) => (
                 <motion.div
                   key={index}
@@ -185,6 +233,26 @@ const About = () => {
                   <p className="text-xs text-muted-foreground mt-1">{tech.category}</p>
                 </motion.div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Current Focus */}
+        <section className="py-16 bg-primary/5">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <h2 className="text-3xl font-bold mb-6">Current Focus</h2>
+                <p className="text-lg text-muted-foreground">
+                  Currently, I'm focused on growing SkillLogic Technologies and creating technology solutions 
+                  that empower businesses and shape the future of digital transformation. My mission is to build 
+                  products that not only solve today's challenges but also anticipate tomorrow's opportunities.
+                </p>
+              </motion.div>
             </div>
           </div>
         </section>
